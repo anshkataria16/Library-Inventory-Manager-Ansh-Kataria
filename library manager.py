@@ -2,9 +2,6 @@ import os
 
 FILENAME = "books.txt"
 
-# ------------------------------
-# Book CLASS
-# ------------------------------
 class Book:
     def __init__(self, title, author, isbn, status="available"):
         self.title = title
@@ -34,10 +31,6 @@ class Book:
             return cls(parts[0], parts[1], parts[2], parts[3])
         return None
 
-
-# ------------------------------
-# LibraryInventory CLASS
-# ------------------------------
 class LibraryInventory:
     def __init__(self):
         self.books = []
@@ -98,10 +91,6 @@ class LibraryInventory:
         else:
             print("Book not found.\n")
 
-
-# ------------------------------
-# MAIN MENU
-# ------------------------------
 library = LibraryInventory()
 
 while True:
@@ -140,3 +129,4 @@ while True:
 
     else:
         print("Invalid option.\n")
+
